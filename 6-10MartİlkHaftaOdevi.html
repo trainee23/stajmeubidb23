@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Checkbox Deneme Uygulama Ödevi</title>
+</head>
+<body>
+
+
+<script type="text/javascript">   
+
+
+function checkDegisim(){
+var checkboxlar = document.getElementById("form1"); //getElementById kullanarak direk form id'si üzerinden çektiğim için alttaki sınıf (class) gibi özellikleri kullanmaya ihtiyaç duymadım, üzerinde çalışırken diğer getElementBy metodlarını kullanma ihtimaline karşı eklemiştim.
+if (checkboxlar[2].checked == true){
+    checkboxlar[1].checked = false;
+    checkboxlar[1].disabled = true;}
+}
+</script>
+
+<form id="form1"> 
+<input type="checkbox" id="chx1" name="kontkutu" class="checkbox" value="checkboxes" onclick="checkDegisim()"/> Yazılım Birimi <br>
+<input type="checkbox" id="chx2" name="kontkutu" class="checkbox" value="checkboxes" onclick="checkDegisim()"/> Yazılım ve Donanım Birimi <br>
+<input type="checkbox" id="chx3" name="kontkutu" class="checkbox" value="checkboxes" onclick="checkDegisim()"/> Donanım Birimi
+</form>
+</body>
+</html>
