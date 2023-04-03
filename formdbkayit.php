@@ -99,8 +99,8 @@ mysqli_query($conn, $tabloyarat)  or die ("Veritabanına Veri Kaydında Hata Olu
 ?>
 <?php 
 mysqli_query($conn, "ALTER TABLE kayitlar CONVERT TO CHARACTER SET utf8 COLLATE utf8_general_ci");
-mysqli_query($conn,"SET CHARACTER SET 'utf8'");
-mysqli_query($conn,"SET SESSION collation_connection ='utf8_unicode_ci'");
+mysqli_query($conn, "SET CHARACTER SET 'utf8'");
+mysqli_query($conn, "SET SESSION collation_connection ='utf8_unicode_ci'");
 ?>
 
 <?php $veriekle = "INSERT INTO kayitlar (adi, soyadi, eposta, mailsaglayici, ulke, kullaniciadi, sifre, sifretekrar, soru, scevabi, cinsiyet, dogumtarihi, kullanicimesaji, sozkabul, sozkabul2, ikincieposta, guvkod) VALUES ('$_POST[adi]', '$_POST[soyadi]', '$_POST[eposta]', '$_POST[mailsaglayici]', '$_POST[ulke]', '$_POST[kullaniciadi]', '$_POST[sifre]', '$_POST[sifretekrar]', '$_POST[soru]', '$_POST[scevabi]', '$_POST[cinsiyet]', '$_POST[dogumtarihi]', '$_POST[kullanicimesaji]', '$_POST[sozkabul]', '$_POST[sozkabul2]', '$_POST[ikincieposta]', '$_POST[guvkod]')"; ?>
