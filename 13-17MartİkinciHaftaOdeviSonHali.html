@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>FORM</title>
+</head>
+<body>
+	<form action = "formdbkayit.php" method="post">
+
+
+
+<fieldset>
+    <legend>Kişi Bilgileri</legend>
+
+<table>
+
+<tr><td>Adı:</td><td><input type="text" name="adi"></td></tr>
+
+<tr><td>Soyadı:</td><td><input type="text" name="soyadi"></td></tr>
+
+<tr><td>E-Posta Adresi:</td><td><input type="text" name="eposta">
+    <select name="mailsaglayici"><option value="secim yok" name="secim">Seçim Yapınız</option><option value="hotmail" name="hotmail.com">@hotmail.com</option>
+    <option value="gmail" name="gmail.com">@gmail.com</option>
+    <option value="yahoo" name="yahoo.com">@yahoo.com</option>
+    </select>
+       </td></tr>
+
+<tr><td>Ülke:</td><td><select name="ulke">
+    <option value="secimyok" name="secin">Birini Seçin:</option>
+    <option value="Turkiye" name="ulke">Türkiye</option>
+    <option value="Azerbaycan" name="ulke">Azerbaycan</option>
+    <option value="Makedonya" name="ulke">Makedonya</option>
+    <option value="Yunanistan" name="ulke">Yunanistan</option>
+    <option value="Bulgaristan" name="ulke">Bulgaristan</option>
+</select></td></tr>
+
+<tr><td>Kullanıcı Adı:</td><td><input type="text" name="kullaniciadi" value=""></td></tr>
+<tr><td>Şifre:</td><td><input type="password" name="sifre" value="" maxlength="8" minlength="6"></td></tr>
+
+<tr><td>Şifreyi yeniden yazın:</td><td><input type="password" name="sifretekrar" maxlength="8" minlength="6"></td></tr>
+
+<tr><td>Soruyu Seç:</td><td><select name="soru"><option value="secim yok" name="sorusec">Birini Seçin</option>
+    <option value="2" name="soru1">Soru 1</option>
+    <option value="3" name="soru2">Soru 2</option>
+    <option value="4" name="soru3">Soru 3</option>
+</select></td></tr>
+
+<tr><td>Soruya Yanıt:</td><td><input type="text" name="scevabi"></td></tr>
+
+<tr><td>Cinsiyet:</td><td><select name="cinsiyet"><option name="cinsiyetsecimiyok" value="secim yok">Seçim Yok</option><option name="cinsiyetibay" value="bay">Bay</option><option name="cinsiyetibayan" value="bayan">Bayan</option>
+</select></td></tr>
+
+<tr><td>Doğum Tarihi:</td><td><input type="date" name="dogumtarihi"></td></tr> <!-- <select name="dogumtarihigun"><option value="gunsecimyok" name="dtarihigunsec">Gün</option><option value="1" name="dogumtarihigun">1</option></select>   -->
+<!-- <select name="dogumtarihiay"><option value="aysecimiyok" name="dtarihiaysec">Ay</option><option value="1" name="dogumtarihiay">1</option></select> -->
+<!-- <select name="dogumtarihiyil"><option value="yilsecimiyok" name="dtarihiyilsec">Yıl</option><option value="2023" name="dogumtarihiyil">2023</option></select></td></tr> -->
+
+<tr><td>Mesaj Gönder:</td><td><textarea name="kullanicimesaji" rows="10" cols="40"> 
+
+</textarea></td></tr>
+
+
+
+<tr><td></td></tr>  <tr><td><input type="checkbox" name="sozkabul" value="kabul edildi"></td><td><u>Lisans Sözleşmesini Kabul Ediyorum</u></td> 
+<tr><td><input type="checkbox" name="sozkabul2" value="kabul edildi"></td><td><input type="text" name="ikincieposta">Ustte belirttigim ana e-posta burada belirttigim ikinci e-posta adresim olarak kaydedilsin</td></tr> 
+<tr><td>Güvenlik Kodu:</td><td><input type="text" name="guvkod">Doğrulama ve teyit işlemleri için belirlediğim güvenlik kodum</td></tr> 
+
+
+
+<tr><td></td><td><input type="submit" value="Kaydol"><input type="reset" value="Temizle"></td></tr>
+
+
+
+</table>
+
+</fieldset>
+
+</form>
+
+</body>
+</html>
+
+
+
+
+
+
